@@ -6,7 +6,26 @@
 	--dark-color: #777;
 	--max-width: 1100px;
 }
-/* background: url("/img/backgound-lije.svg") no-repeat center center/cover; */
+
+img.bg-banner,
+img.bg-banner-ct {
+	/* Set rules to fill background */
+	min-width: 600px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: absolute;
+	bottom: 30%;
+	left: 0;
+	z-index: -20;
+}
+
+img.bg-banner-ct {
+	bottom: 70%;
+}
 
 body {
 	font-family: "Lato", sans-serif;
@@ -168,6 +187,8 @@ ul {
 }
 
 #showcase .services p {
+	color: rgb(220, 218, 218);
+	font-size: 0.9rem;
 	line-height: 1.3;
 	text-align: left;
 }
@@ -390,6 +411,10 @@ button {
 }
 
 @media (max-width: 500px) {
+	img.bg-banner,
+	img.bg-banner-ct {
+		min-width: 280px;
+	}
 	#main-nav .container {
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -407,7 +432,7 @@ button {
 	}
 
 	#showcase h1 {
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 	}
 
 	#showcase .btn {

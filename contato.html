@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/add0424310.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel&family=Jost:wght@500&family=Lato&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Sierlije | Advocacia</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/add0424310.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Jost:wght@500&family=Lato&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Sierlije | Advocacia</title>
+	<body>
+		<img src="img/about-banner.png" class="bg-banner-ct" alt="" />
+		<!-- Navbar -->
+		<nav id="main-nav">
+			<div class="container">
+				<a class="logo" href="index.html">NASCIMENTO & SILVA</a>
 
-</head>
+				<ul>
+					<li>
+						<a href="index.html"><i class="fas fa-home"></i></a>
+					</li>
+					<li><a href="about.html">EQUIPE</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
+				</ul>
+			</div>
+		</nav>
 
-<body>
-  <!-- Navbar -->
-  <nav id="main-nav">
-    <div class="container">
-      <a class="logo" href="index.html">NASCIMENTO & SILVA</a>
+		<!-- Contato -->
+		<section id="contato">
+			<div class="container">
+				<div class="contact-form">
+					<h1>Fale Conosco</h1>
+					<form
+						name="contact"
+						method="POST"
+						netlify-honeypot="bot-field"
+						data-netlify="true"
+						action=""
+					>
+						<input type="hidden" name="form-name" value="contact" />
+						<p class="hidden">
+							<label
+								>Don’t fill this out if you’re human: <input name="bot-field"
+							/></label>
+						</p>
+						<div class="form-control">
+							<label for="name">Nome</label>
+							<input type="text" name="name" required />
+						</div>
+						<div class="form-control">
+							<label for="email">Email</label>
+							<input type="text" name="email" required />
+						</div>
+						<div class="form-control">
+							<label for="email">Mensagem</label>
+							<textarea name="message" id="message" required></textarea>
+						</div>
+						<input type="submit" value="Enviar" class="btn" />
+					</form>
+				</div>
+			</div>
+		</section>
 
-      <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-        <li><a href="about.html">EQUIPE</a></li>
-        <li><a href="contato.html">CONTATO</a></li>
-      </ul>
-    </div>
-  </nav>
+		<!-- Footer -->
 
-  <!-- Contato -->
-  <section id="contato">
-
-    <div class="container">
-      <div class="contact-form">
-        <h1>Fale Conosco</h1>
-        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="">
-          <input type="hidden" name="form-name" value="contact">
-          <p class="hidden">
-            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-          </p>
-          <div class="form-control">
-            <label for="name">Nome</label>
-            <input type="text" name="name" required />
-          </div>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="text" name="email" required />
-          </div>
-          <div class="form-control">
-            <label for="email">Mensagem</label>
-            <textarea name="message" id="message" required></textarea>
-          </div>
-          <input type="submit" value="Enviar" class="btn" />
-        </form>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-
-  <footer id="footer">
-    <div class="footer-wrap">
-      <div class="social">
-        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-      </div>
-      <div class="credits">
-        <small>© 2021 Nascimente & Silva. Todos os direitos reservados. Site by Thiago Neves.</small>
-      </div>
-    </div>
-  </footer>
-</body>
-
+		<footer id="footer">
+			<div class="footer-wrap">
+				<div class="social">
+					<a href="http://instagram.com" target="_blank"
+						><i class="fab fa-instagram fa-2x"></i
+					></a>
+					<a href="http://facebook.com" target="_blank"
+						><i class="fab fa-facebook fa-2x"></i
+					></a>
+					<a href="http://twitter.com" target="_blank"
+						><i class="fab fa-twitter fa-2x"></i
+					></a>
+				</div>
+				<div class="credits">
+					<small
+						>© 2021 Nascimente & Silva. Todos os direitos reservados. Site by
+						Thiago Neves.</small
+					>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
