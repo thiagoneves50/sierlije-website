@@ -238,6 +238,7 @@ ul {
 #about .person {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 #about .person:first-child {
 	padding-bottom: 4rem;
@@ -285,6 +286,7 @@ ul {
 #about .person h2 {
 	font-size: 2.5rem;
 	margin: 2rem 0;
+	margin-bottom: 0;
 }
 
 /* Contato */
@@ -443,6 +445,10 @@ button {
 	#about h1 {
 		font-size: 2rem;
 		text-align: center;
+		margin-top: 2rem;
+	}
+
+	#about .person p {
 		margin-top: 2rem;
 	}
 
